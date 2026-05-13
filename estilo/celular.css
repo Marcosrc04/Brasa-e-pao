@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+@media (max-width:450px) {
+ .section-1-esquerda-direita {
+    flex-direction: column;
+ }
+
+ header {
+    flex-direction: column;
+    gap: 10px;
+ }
+}
