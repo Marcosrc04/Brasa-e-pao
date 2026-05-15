@@ -1,5 +1,19 @@
 @charset "UTF-8";
 
+:root {
+    --background: #120300;
+    --background-secondary: #1a0500;
+
+    --primary: #ff6b1a;
+    --primary-dark: #ff3c00;
+
+    --title: #f4e4c1;
+
+    --subtitle: #968c7d;
+
+    --card: #2a0d05;
+}
+
 @media (max-width:600px) {
     .section-1-esquerda-direita {
         flex-direction: column;
@@ -7,6 +21,11 @@
         max-width: 1200px;
         margin: 0 auto;
         padding: 40px 24px;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
     }
 
     header {
@@ -25,6 +44,12 @@
         min-height: 100vh;
     }
 
+    .section-1-lado-direito {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
     .section-1-lado-esquerdo {
         width: 100%;
     }
@@ -41,27 +66,24 @@
         width: 100%;
     }
 
-    img {
-        max-width: 100%;
-        height: auto;
-        display: block;
-    }
-
     .botoes-de-informacoes-section-1 {
         display: flex;
         flex-direction: row;
         gap: 14px;
-        width: 100%;
         margin-top: 35px;
+        justify-content: start;
     }
 
     .ver-cardapio-main {
-        width: 42%;
-        height: 50px;
-
+        width: 145px;
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+
+    .ver-cardapio-main a {
+        margin: 0;
+
     }
 
     .telefone-main {
@@ -75,6 +97,141 @@
 
     .telefone-main a {
         font-size: 0.8em;
+    }
+
+    .section-2 {
+        background-color: var(--card);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .paragrafo-topo-section-2 {
+        font-family: Montserrat, sans-serif;
+        color: var(--primary);
+        font-weight: 300;
+        margin-top: 50px;
+    }
+
+    .titulo-section-2 {
+        font-family: Anton;
+        font-size: clamp(3rem, 10vw, 6rem);
+        line-height: 60px;
+        text-align: center;
+        color: white;
+        margin-bottom: 50px;
+    }
+
+    .section-2 img {
+        transition: 0.3s ease;
+    }
+
+    .section-2 img:hover {
+        transform: scale(1.01);
+        transition: 0.3s ease;
+    }
+
+    .cardapio-section-2 {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .brasa-classico {
+        border-radius: 20px;
+        border: 1px solid var(--subtitle);
+        transition: 0.3s ease;
+        overflow: hidden;
+
+        border: 1px solid rgba(255, 255, 255, 0.214);
+
+        background: linear-gradient(40deg, #2a262497 50%, #2a0d05);
+        text-align: center;
+        transition:0.3s ease;
+    }
+    .brasa-classico:hover {
+        transform: scale(1.02);
+        transition:0.3s ease;
+        img {
+            transform: scale(1.05);
+        }
+        box-shadow: 0 0 7px #ff3c00bc;
+    }
+
+    .cardapio-bottom-esquerda-direita {
+        display: flex;
+        text-align: start;
+        color: white;
+        padding: 20px;
+        gap: 20px;
+        justify-content: space-between;
+    }
+
+    .cardapio-bottom-esquerda-direita h2 {
+        font-family: Anton;
+        margin-bottom: 10px;
+    }
+
+    .cardapio-bottom-esquerda-direita p {
+        font-size: 0.8em;
+        color: var(--subtitle);
+        font-family: Montserrat;
+    }
+
+
+    .cardapio-bottom-esquerda {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cardapio-bottom-direita {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 20vw;
+    }
+
+    .fritas-rusticas {
+        border-radius: 20px;
+        border: 1px solid var(--subtitle);
+        overflow: hidden;
+
+        border: 1px solid rgba(255, 255, 255, 0.214);
+
+        background: linear-gradient(40deg, #2a262497 50%, #2a0d05);
+        text-align: center;
+        transition:0.3s ease;
+    }
+    .fritas-rusticas:hover {
+        transform: scale(1.02);
+        transition:0.3s ease;
+        img {
+            transform: scale(1.05);
+        }
+        box-shadow: 0 0 7px #ff3c00bc;
+    }
+
+    .milkshake-artesanal {
+             border-radius: 20px;
+        border: 1px solid var(--subtitle);
+        transition: 0.3s ease;
+        overflow: hidden;
+
+        border: 1px solid rgba(255, 255, 255, 0.214);
+
+        background: linear-gradient(40deg, #2a262497 50%, #2a0d05);
+        text-align: center;
+        transition:0.3s ease;
+    }
+    .milkshake-artesanal:hover {
+        transform: scale(1.02);
+        transition:0.3s ease;
+        img {
+            transform: scale(1.05);
+        }
+        box-shadow: 0 0 7px #ff3c00bc;
     }
 
 }
